@@ -4,7 +4,7 @@ import seaborn as sns
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    videogames = pd.read_csv("./vgsales.csv")
+    videogames = pd.read_csv("vgsales.csv")
     print(videogames)
     GenceAndGlobal_Sales = pd.crosstab(videogames["Genre"], videogames["Global_Sales"], margins=True)
     sns.set(rc={"figure.figsize": (15, 4)})
